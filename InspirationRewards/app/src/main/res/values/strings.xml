@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">InspirationRewards</string>
+    <string name="userPreferences">U_PREF</string>
+    <string name="passwordPreferences">PASS_PREF</string>
+    <string name="checkPreferences">CHECK_PREF</string>
+    <string name="prefFile">MY_PREF_FILE</string>
+</resources>

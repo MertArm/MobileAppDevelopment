@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/info_page"
+        android:icon="@drawable/info_page"
+        android:title="Info"
+        android:visible="true"
+        app:showAsAction="always" />
+
+    <item android:title="Add Note"
+        android:id="@+id/edit_note"
+        android:icon="@drawable/new_note"
+        app:showAsAction="always" />
+</menu>

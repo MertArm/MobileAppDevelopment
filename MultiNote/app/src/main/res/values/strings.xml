@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MultiNote</string>
+    <string name="file_name">Notes.json</string>
+    <string name="encoding">UTF-8</string>
+</resources>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:focusableInTouchMode="true"
+    tools:context=".Reward">
+
+    <TextView
+        android:id="@+id/awardProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="textview"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rewardProfilePhoto"
+        android:layout_width="139dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/awardProfileName"
+        app:layout_constraintTop_toBottomOf="@+id/awardProfileName"
+        app:srcCompat="@drawable/default_photo" />
+
+    <TextView
+        android:id="@+id/rewardProfilePoints"
+        android:layout_width="162dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Points Awarded:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rewardProfilePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/awardProfileName" />
+
+    <TextView
+        android:id="@+id/rewardProfileDept"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:text="Department:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/rewardProfilePointsView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rewardProfilePointsView"
+        app:layout_constraintTop_toBottomOf="@+id/rewardProfilePointsView" />
+
+    <TextView
+        android:id="@+id/rewardProfilePosition"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="16dp"
+        android:text="Position:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/rewardProfileDeptView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rewardProfileDeptView"
+        app:layout_constraintTop_toBottomOf="@+id/rewardProfileDeptView" />
+
+    <TextView
+        android:id="@+id/rewardProfileStory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Your Story:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/rewardProfilePhoto"
+        app:layout_constraintStart_toStartOf="@+id/awardProfileName"
+        app:layout_constraintTop_toBottomOf="@+id/rewardProfilePhoto" />
+
+    <TextView
+        android:id="@+id/rewardProfileStoryView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="#D6D7D7"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:maxLength="360"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rewardProfileStory"
+        app:layout_constraintTop_toBottomOf="@+id/rewardProfileStory" />
+
+    <TextView
+        android:id="@+id/pointsToSend"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Reward points to send:"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rewardProfileSend"
+        app:layout_constraintStart_toStartOf="@+id/rewardProfileStoryView" />
+
+    <TextView
+        android:id="@+id/rewardProfilePointsView"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="12dp"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/rewardProfilePoints"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rewardProfilePoints"
+        app:layout_constraintTop_toBottomOf="@+id/rewardProfilePoints" />
+
+    <TextView
+        android:id="@+id/rewardProfileDeptView"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/rewardProfileDept"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rewardProfileDept"
+        app:layout_constraintTop_toBottomOf="@+id/rewardProfileDept" />
+
+    <TextView
+        android:id="@+id/rewardProfilePositionView"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/rewardProfilePosition"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rewardProfilePosition"
+        app:layout_constraintTop_toBottomOf="@+id/rewardProfilePosition" />
+
+    <EditText
+        android:id="@+id/rewardProfileSend"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="#D6D7D7"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/rewardProfileStoryView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/pointsToSend"
+        app:layout_constraintTop_toBottomOf="@+id/rewardProfileStoryView" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="95dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Comment:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/pointsToSend"
+        app:layout_constraintTop_toBottomOf="@+id/pointsToSend" />
+
+    <TextView
+        android:id="@+id/commentCharsLeft"
+        android:layout_width="125dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="28dp"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/comment"
+        app:layout_constraintStart_toEndOf="@+id/comment" />
+
+    <EditText
+        android:id="@+id/editComment"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="36dp"
+        android:background="#D6D7D7"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:maxLength="80"
+        app:layout_constraintEnd_toEndOf="@+id/rewardProfileSend"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/comment"
+        app:layout_constraintTop_toBottomOf="@+id/commentCharsLeft" />
+
+</android.support.constraint.ConstraintLayout>
